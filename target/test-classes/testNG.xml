@@ -4,8 +4,8 @@
 	<test name="LoginTest">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<!-- <class name="com.jtaf.qa.test.LoginTest"></class> -->
-			<class name="com.jtaf.qa.test.CustomerSearchTest"></class>
+			<class name="com.jtaf.qa.test.LoginTest"></class>
+			<!-- <class name="com.jtaf.qa.test.CustomerSearchTest"></class> -->
 		</classes>
 	</test>
 </suite>

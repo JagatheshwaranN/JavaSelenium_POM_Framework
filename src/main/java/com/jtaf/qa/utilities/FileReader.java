@@ -1,8 +1,9 @@
 package com.jtaf.qa.utilities;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 /***
@@ -12,27 +13,43 @@ import java.util.Properties;
  */
 public class FileReader {
 
-	InputStream inputStream;
-	Properties properties;
-	
-	private static String propertyFilePath = "./src/main/resources/configuration/";
+	private Properties properties;
+	private File file;
+	private FileInputStream fileInputStream;
+
+	private static String propertyFilePath = "//src//main//resources//configuration//";
 	private static String testConfigFile = "TestConfig.properties";
 
-	public void getPropFileData() throws IOException {
+	public void loadPropertyFile() throws IOException {
 		try {
 			properties = new Properties();
-			inputStream = getClass().getClassLoader().getResourceAsStream(propertyFilePath + testConfigFile);
-			if (inputStream != null) {
-				properties.load(inputStream);
-			} else {
-				throw new FileNotFoundException(
-						"+++++++++++++++ [ Property file '" + testConfigFile + "' not found ] +++++++++++++++");
+			file = new File(System.getProperty("user.dir") + propertyFilePath + testConfigFile);
+			try {
+				fileInputStream = new FileInputStream(file);
+			} catch (FileNotFoundException ex) {
+				System.out.println(
+						"+++++++++++++++ [ Property file '\" + testConfigFile + \"' not found ] +++++++++++++++");
+				ex.printStackTrace();
+			}
+			try {
+				properties.load(fileInputStream);
+			} catch (IOException ex) {
+				ex.printStackTrace();
 			}
 
-		} catch (Exception ex) {
-			ex.printStackTrace();
 		} finally {
-			inputStream.close();
+			fileInputStream.close();
 		}
 	}
+
+	public String getTestData(String property) {
+		String dataFromPropFile = null;
+		try {
+			dataFromPropFile = properties.getProperty(property).trim();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		return dataFromPropFile;
+	}
+	
 }

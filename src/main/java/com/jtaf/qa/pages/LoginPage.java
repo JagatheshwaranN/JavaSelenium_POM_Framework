@@ -42,26 +42,18 @@ public class LoginPage extends BasePage {
 	public String getLoginPageHeader() {
 		return getPageHeader(header);
 	}
-
-	/**
-	 * 
-	 * @param userName
-	 * @param password
-	 * @return
-	 */
+	
 	public HomePage doLogin(String username, String password) {
-		getEmailId().clear();
-		getEmailId().sendKeys(username);
-		getPassword().clear();
-		getPassword().sendKeys(password);
-		getLoginButton().click();
+		try {
+			getEmailId().clear();
+			getEmailId().sendKeys(username);
+			getPassword().clear();
+			getPassword().sendKeys(password);
+			getLoginButton().click();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 		return getInstance(HomePage.class);
-	}
-
-	public void doLogin() {
-		getEmailId().sendKeys();
-		getPassword().sendKeys();
-		getLoginButton().click();
 	}
 
 }

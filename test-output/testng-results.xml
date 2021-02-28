@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="testNGSuite" duration-ms="31125" started-at="2021-02-05T04:57:55Z" finished-at="2021-02-05T04:58:26Z">
+  <suite name="testNGSuite" duration-ms="30550" started-at="2021-02-28T07:32:59Z" finished-at="2021-02-28T07:33:30Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="31125" started-at="2021-02-05T04:57:55Z" finished-at="2021-02-05T04:58:26Z">
-      <class name="com.test.CustomerSearchTest">
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.test.CustomerSearchTest@ae45eb6]" name="setUpTest" is-config="true" duration-ms="9375" started-at="2021-02-05T04:57:55Z" finished-at="2021-02-05T04:58:04Z">
+    <test name="LoginTest" duration-ms="30550" started-at="2021-02-28T07:32:59Z" finished-at="2021-02-28T07:33:30Z">
+      <class name="com.jtaf.qa.test.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="init" is-config="true" duration-ms="32" started-at="2021-02-28T07:32:59Z" finished-at="2021-02-28T07:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="setUpTest" is-config="true" duration-ms="7551" started-at="2021-02-28T07:32:59Z" finished-at="2021-02-28T07:33:07Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +22,57 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="verifyCustomerSearch()[pri:1, instance:com.test.CustomerSearchTest@ae45eb6]" name="verifyCustomerSearch" duration-ms="20661" started-at="2021-02-05T04:58:04Z" finished-at="2021-02-05T04:58:25Z">
+        <test-method status="PASS" signature="verifyloginPageTitleTest()[pri:1, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="verifyloginPageTitleTest" duration-ms="62" started-at="2021-02-28T07:33:07Z" finished-at="2021-02-28T07:33:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCustomerSearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.CustomerSearchTest@ae45eb6]" name="tearDown" is-config="true" duration-ms="1025" started-at="2021-02-05T04:58:25Z" finished-at="2021-02-05T04:58:26Z">
+        </test-method> <!-- verifyloginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="4261" started-at="2021-02-28T07:33:07Z" finished-at="2021-02-28T07:33:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.test.CustomerSearchTest -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="setUpTest" is-config="true" duration-ms="4523" started-at="2021-02-28T07:33:11Z" finished-at="2021-02-28T07:33:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="verifyloginPageHeaderTest()[pri:2, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="verifyloginPageHeaderTest" duration-ms="116" started-at="2021-02-28T07:33:16Z" finished-at="2021-02-28T07:33:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginPageHeaderTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="276" started-at="2021-02-28T07:33:16Z" finished-at="2021-02-28T07:33:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="setUpTest" is-config="true" duration-ms="4985" started-at="2021-02-28T07:33:16Z" finished-at="2021-02-28T07:33:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="verifyLoginTest()[pri:3, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="verifyLoginTest" duration-ms="8310" started-at="2021-02-28T07:33:21Z" finished-at="2021-02-28T07:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="415" started-at="2021-02-28T07:33:30Z" finished-at="2021-02-28T07:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:com.jtaf.qa.test.LoginTest@6f7fd0e6]" name="exit" is-config="true" duration-ms="718" started-at="2021-02-28T07:33:30Z" finished-at="2021-02-28T07:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- com.jtaf.qa.test.LoginTest -->
     </test> <!-- LoginTest -->
   </suite> <!-- testNGSuite -->
 </testng-results>

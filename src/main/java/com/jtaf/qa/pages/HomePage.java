@@ -9,6 +9,7 @@ public class HomePage extends BasePage {
 	private By header = By.className("content-header");
 	private By leftNavCustomersOption = By.xpath("//a[@href='#']//span[text()='Customers']");
 	private By leftNavInlineCustomersOption = By.xpath("//a[@href='/Admin/Customer/List']//span[text()='Customers']");
+	private By customerSearchSection = By.xpath("//div[@class='panel panel-default panel-search']");
 
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -34,9 +35,18 @@ public class HomePage extends BasePage {
 		return getElement(leftNavInlineCustomersOption);
 	}
 
+	public WebElement getCustomerSearchSection() {
+		return getElement(customerSearchSection);
+	}
+
 	public CustomerSearchPage navigateToCustomerSearchPage() {
-		getLeftNavCustomersOption().click();
-		getLeftNavInlineCustomersOption().click();
+		try {
+			getLeftNavCustomersOption().click();
+			getLeftNavInlineCustomersOption().click();
+			getCustomerSearchSection().isDisplayed();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 		return getInstance(CustomerSearchPage.class);
 	}
 }

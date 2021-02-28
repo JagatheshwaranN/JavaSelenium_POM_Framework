@@ -29,10 +29,10 @@ public class LoginTest extends BaseTest {
 
 	@Test(priority = 3)
 	public void verifyLoginTest() {
-		HomePage homePage = page.getInstance(LoginPage.class).doLogin("admin@yourstore.com", "admin");
+		HomePage homePage = page.getInstance(LoginPage.class).doLogin(getTestData("app.username"), getTestData("app.password"));
 		String homePageHeader = homePage.getHomePageHeader();
 		System.out.println("******* Home Page Header");
 		Assert.assertEquals(homePageHeader, "Dashboard");
 	}
-		
+
 }
