@@ -6,19 +6,23 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 /***
  * 
  * @author Jaga
  *
  */
-public class FileReader {
+public class FileReader extends LoggerUtility {
 
-	private Properties properties;
-	private File file;
-	private FileInputStream fileInputStream;
+	private static Properties properties;
+	private static File file;
+	private static FileInputStream fileInputStream;
 
 	private static String propertyFilePath = "//src//main//resources//configuration//";
 	private static String testConfigFile = "TestConfig.properties";
+	
+	Logger log = getLogger(FileReader.class);
 
 	public void loadPropertyFile() throws IOException {
 		try {
@@ -27,8 +31,8 @@ public class FileReader {
 			try {
 				fileInputStream = new FileInputStream(file);
 			} catch (FileNotFoundException ex) {
-				System.out.println(
-						"+++++++++++++++ [ Property file '\" + testConfigFile + \"' not found ] +++++++++++++++");
+				log.info("======================== [ Property file " + testConfigFile
+						+ " not found ] ========================");
 				ex.printStackTrace();
 			}
 			try {
@@ -51,5 +55,5 @@ public class FileReader {
 		}
 		return dataFromPropFile;
 	}
-	
+
 }

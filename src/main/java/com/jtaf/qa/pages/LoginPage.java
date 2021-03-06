@@ -1,5 +1,6 @@
 package com.jtaf.qa.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +15,8 @@ public class LoginPage extends BasePage {
 	private By password = By.id("Password");
 	private By loginButton = By.xpath("//input[@value='Log in']");
 	private By header = By.className("page-title");
+	
+	Logger log = getLogger(LoginPage.class);
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
@@ -45,11 +48,13 @@ public class LoginPage extends BasePage {
 	
 	public HomePage doLogin(String username, String password) {
 		try {
+			log.info("Login Page doLogin Execution Start");
 			getEmailId().clear();
 			getEmailId().sendKeys(username);
 			getPassword().clear();
 			getPassword().sendKeys(password);
 			getLoginButton().click();
+			log.info("Login Page doLogin Execution End");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

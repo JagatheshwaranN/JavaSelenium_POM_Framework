@@ -4,16 +4,17 @@
   <test thread-count="1" name="LoginTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.jtaf.qa.test.LoginTest">
+      <class name="com.jtaf.qa.test.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="init"/>
-          <include name="verifyloginPageTitleTest"/>
-          <include name="verifyloginPageHeaderTest"/>
-          <include name="setUpTest"/>
+          <include name="exit"/>
           <include name="verifyLoginTest"/>
+          <include name="init"/>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="setUpTest"/>
+          <include name="verifyLoginPageHeaderTest"/>
         </methods>
-      </class> <!-- com.jtaf.qa.test.LoginTest -->
+      </class> <!-- com.jtaf.qa.test.LoginPageTest -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [testNGSuite] -->

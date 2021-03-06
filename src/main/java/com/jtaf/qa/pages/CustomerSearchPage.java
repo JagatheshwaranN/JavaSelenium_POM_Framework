@@ -2,6 +2,7 @@ package com.jtaf.qa.pages;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +17,8 @@ public class CustomerSearchPage extends BasePage {
 	private By tableCustomerGrid = By.xpath("//table[@id='customers-grid']");
 	private By tableCustomerGridName = By.xpath("//table[@id='customers-grid']//tbody//tr//td[3]");
 	private By tableCustomerGridEmpty = By.xpath("//table//td[@class='dataTables_empty']");
+
+	Logger log = getLogger(CustomerSearchPage.class);
 
 	public CustomerSearchPage(WebDriver driver) {
 		super(driver);
@@ -55,12 +58,12 @@ public class CustomerSearchPage extends BasePage {
 
 	public void customerSearch(String customerName) {
 		try {
+			log.info("Customer Search Page customerSearch Execution Start");
 			getCustomerSearchSection().isDisplayed();
 			getFirstName().sendKeys(customerName);
 			getCustomerSearchButton().click();
 			boolean flag = getTableCustomerGrid().isDisplayed();
 			if (flag == true) {
-				System.out.println("********* Customer search result section found");
 				int customerNameGrid = getTableCustomerGridName().size();
 				if (customerNameGrid == 1) {
 					try {
@@ -69,19 +72,20 @@ public class CustomerSearchPage extends BasePage {
 						ex.printStackTrace();
 					}
 					String actualCustomerName = getTableCustomerGridName().get(0).getText();
-					System.out.println("********* Actual Customer Name : " + actualCustomerName);
+					log.info("Actual Customer Name : " + actualCustomerName);
 					if (actualCustomerName.equalsIgnoreCase("Victoria Terces")) {
-						System.out.println("********* Customer match successful");
+						log.info("Customer Search Match Successful");
 					} else {
 						Assert.assertFalse(true, "Customer match unsuccessful");
 					}
 				} else {
-					System.out.println("Empty table data found : " + getTableCustomerGridEmpty().isDisplayed());
+					log.info("Empty table data found : " + getTableCustomerGridEmpty().isDisplayed());
 					Assert.assertFalse(true, "No Customer data found");
 				}
 			} else {
 				Assert.assertFalse(true, "No customer search result section found");
 			}
+			log.info("Customer Search Page customerSearch Execution End");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

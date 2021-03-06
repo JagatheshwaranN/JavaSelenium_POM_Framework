@@ -7,11 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.jtaf.qa.utilities.LoggerUtility;
+
 /**
  * @author Jaga
  *
  */
-public abstract class Page {
+public abstract class Page extends LoggerUtility {
 
 	WebDriver driver;
 	WebDriverWait wait;
@@ -26,7 +28,7 @@ public abstract class Page {
 	public abstract String getPageHeader(By locator);
 
 	public abstract WebElement getElement(By locator);
-	
+
 	public abstract List<WebElement> getElements(By locator);
 
 	public abstract void waitForElementPresent(By locator);

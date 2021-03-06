@@ -1,0 +1,10 @@
+06-03-2021 21:03:768 INFO  BaseTest :34 - ======================== [ Property file load successful ] ========================
+06-03-2021 21:03:798 INFO  BaseTest :43 - ======================== [ Launching chrome browser] ========================
+06-03-2021 21:03:410 INFO  LoginPage :22 - Login Page Title Test Execution Start
+06-03-2021 21:03:428 INFO  LoginPage :25 - Login Page Title Test Execution End
+06-03-2021 21:03:911 INFO  BaseTest :43 - ======================== [ Launching chrome browser] ========================
+06-03-2021 21:03:912 INFO  LoginPage :34 - Login Page Header Test Execution Start
+06-03-2021 21:03:374 INFO  LoginPage :37 - Login Page Header Test Execution End
+06-03-2021 21:03:480 INFO  BaseTest :43 - ======================== [ Launching chrome browser] ========================
+06-03-2021 21:03:181 INFO  LoginPage :46 - Login To Application Test Execution Start
+06-03-2021 21:03:847 INFO  LoginPage :51 - Login To Application Test Execution End

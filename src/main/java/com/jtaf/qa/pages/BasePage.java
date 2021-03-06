@@ -2,6 +2,7 @@ package com.jtaf.qa.pages;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
  *
  */
 public class BasePage extends Page {
+
+	Logger log = getLogger(BasePage.class);
 
 	public BasePage(WebDriver driver) {
 		super(driver);
@@ -36,12 +39,12 @@ public class BasePage extends Page {
 			waitForElementPresent(locator);
 			element = driver.findElement(locator);
 		} catch (Exception ex) {
-			System.out.println("Some error occured while creating element : " + locator.toString());
+			log.info("Some error occured while creating element : " + locator.toString());
 			ex.printStackTrace();
 		}
 		return element;
 	}
-	
+
 	@Override
 	public List<WebElement> getElements(By locator) {
 		List<WebElement> elements = null;
@@ -49,7 +52,7 @@ public class BasePage extends Page {
 			waitForElementPresent(locator);
 			elements = driver.findElements(locator);
 		} catch (Exception ex) {
-			System.out.println("Some error occured while creating element : " + locator.toString());
+			log.info("Some error occured while creating element : " + locator.toString());
 			ex.printStackTrace();
 		}
 		return elements;
@@ -60,7 +63,7 @@ public class BasePage extends Page {
 		try {
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		} catch (Exception ex) {
-			System.out.println("Some error occured while wait for element : " + locator.toString());
+			log.info("Some error occured while wait for element : " + locator.toString());
 			ex.printStackTrace();
 		}
 	}
@@ -70,10 +73,9 @@ public class BasePage extends Page {
 		try {
 			wait.until(ExpectedConditions.titleContains(title));
 		} catch (Exception ex) {
-			System.out.println("Some error occured while wait for page title : " + title);
+			log.info("Some error occured while wait for page title : " + title);
 			ex.printStackTrace();
 		}
-
 	}
 
 }

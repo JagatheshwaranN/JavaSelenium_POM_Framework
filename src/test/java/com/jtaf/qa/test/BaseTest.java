@@ -2,6 +2,7 @@ package com.jtaf.qa.test;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -22,13 +23,15 @@ import com.jtaf.qa.utilities.FileReader;
  */
 public class BaseTest extends FileReader {
 
-	public WebDriver driver;
-	public Page page;
+	private static WebDriver driver;
+	public static Page page;
+
+	Logger log = getLogger(BaseTest.class);
 
 	@BeforeSuite
 	public void init() throws IOException {
 		loadPropertyFile();
-		System.out.println("+++++++++++++++ [ Property file load successful ] +++++++++++++++");
+		log.info("======================== [ Property File Load Successful ] ========================");
 	}
 
 	@BeforeMethod
@@ -37,7 +40,7 @@ public class BaseTest extends FileReader {
 		if (System.getProperty("os.name").contains(getTestData("operating.system"))) {
 			if (browser.equalsIgnoreCase(getTestData("browser.chrome"))) {
 				System.setProperty("webdriver.chrome.driver", getTestData("chrome.driver"));
-				System.out.println("+++++++++++++++ [ Launching " + browser + " browser] +++++++++++++++");
+				log.info("======================== [ Launching " + browser + " Browser] ========================");
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 			} else if (browser.equalsIgnoreCase("browser.firefox")) {
@@ -45,12 +48,12 @@ public class BaseTest extends FileReader {
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 			} else {
-				System.out.println("No browser is defined in xml file");
+				log.info("No Browser Is Defined In XML File");
 			}
 			driver.get(getTestData("app.url"));
 			page = new BasePage(driver);
 		} else {
-			System.out.println("+++++++++++++++ [ The operating system is not WINDOWS ] +++++++++++++++");
+			log.info("======================== [ The Operating System Is Not WINDOWS ] ========================");
 			Assert.fail();
 		}
 	}
