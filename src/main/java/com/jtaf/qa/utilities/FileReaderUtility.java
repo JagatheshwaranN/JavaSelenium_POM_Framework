@@ -13,16 +13,16 @@ import org.apache.log4j.Logger;
  * @author Jaga
  *
  */
-public class FileReader extends LoggerUtility {
+public class FileReaderUtility extends LoggerUtility {
 
 	private static Properties properties;
 	private static File file;
 	private static FileInputStream fileInputStream;
 
-	private static String propertyFilePath = "//src//main//resources//configuration//";
+	private static String propertyFilePath = "//src//main//resources//configurations//";
 	private static String testConfigFile = "TestConfig.properties";
 	
-	Logger log = getLogger(FileReader.class);
+	Logger log = getLogger(FileReaderUtility.class);
 
 	public void loadPropertyFile() throws IOException {
 		try {

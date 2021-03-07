@@ -69,6 +69,16 @@ public class BasePage extends Page {
 	}
 
 	@Override
+	public void waitForElementVisible(By locator) {
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		} catch (Exception ex) {
+			log.info("Some error occured while wait for element : " + locator.toString());
+			ex.printStackTrace();
+		}
+	}
+
+	@Override
 	public void waitForPageTitle(String title) {
 		try {
 			wait.until(ExpectedConditions.titleContains(title));

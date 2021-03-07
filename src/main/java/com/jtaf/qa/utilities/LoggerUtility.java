@@ -7,7 +7,7 @@ public class LoggerUtility {
 
 	private static boolean root = false;
 
-	private static String propertyFilePath = "//src//main//resources//configuration//";
+	private static String propertyFilePath = "//src//main//resources//configurations//";
 	private static String logConfigFile = "log4j.properties";
 
 	public Logger getLogger(Class<?> cls) {

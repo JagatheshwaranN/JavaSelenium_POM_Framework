@@ -15,8 +15,8 @@ import com.jtaf.qa.utilities.LoggerUtility;
  */
 public abstract class Page extends LoggerUtility {
 
-	WebDriver driver;
-	WebDriverWait wait;
+	public WebDriver driver;
+	public WebDriverWait wait;
 
 	public Page(WebDriver driver) {
 		this.driver = driver;
@@ -33,6 +33,8 @@ public abstract class Page extends LoggerUtility {
 
 	public abstract void waitForElementPresent(By locator);
 
+	public abstract void waitForElementVisible(By locator);
+	
 	public abstract void waitForPageTitle(String title);
 
 	public <TPage extends BasePage> TPage getInstance(Class<TPage> pageClass) {

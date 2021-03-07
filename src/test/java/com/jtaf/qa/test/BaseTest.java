@@ -14,14 +14,14 @@ import org.testng.annotations.Parameters;
 
 import com.jtaf.qa.pages.BasePage;
 import com.jtaf.qa.pages.Page;
-import com.jtaf.qa.utilities.FileReader;
+import com.jtaf.qa.utilities.FileReaderUtility;
 
 /**
  * 
  * @author Jaga
  *
  */
-public class BaseTest extends FileReader {
+public class BaseTest extends FileReaderUtility {
 
 	private static WebDriver driver;
 	public static Page page;
