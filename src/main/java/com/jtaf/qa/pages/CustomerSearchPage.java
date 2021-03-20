@@ -10,8 +10,8 @@ import org.testng.Assert;
 
 public class CustomerSearchPage extends BasePage {
 
-	private By header = By.xpath("//h1[@class='pull-left']");
-	private By customerSearchSection = By.xpath("//div[@class='panel panel-default panel-search']");
+	private By header = By.xpath("//h1[@class='float-left']");
+	private By customerSearchSection = By.xpath("//div[@class='card card-default card-search']");
 	private By firstName = By.id("SearchFirstName");
 	private By customerSearchButton = By.id("search-customers");
 	private By tableCustomerGrid = By.xpath("//table[@id='customers-grid']");

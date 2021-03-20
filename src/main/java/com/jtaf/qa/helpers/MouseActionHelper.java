@@ -4,15 +4,15 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import com.jtaf.qa.utilities.LoggerUtility;
 
-import com.jtaf.qa.pages.BasePage;
-
-public class MouseActionHelper extends BasePage {
+public class MouseActionHelper extends LoggerUtility {
 
 	Logger log = getLogger(MouseActionHelper.class);
+	private WebDriver driver;
 
 	public MouseActionHelper(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 	}
 
 	public void mouseHover(WebElement element1, WebElement element2) {

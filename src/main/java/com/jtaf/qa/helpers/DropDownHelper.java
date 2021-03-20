@@ -4,19 +4,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.jtaf.qa.pages.BasePage;
+import com.jtaf.qa.utilities.LoggerUtility;
 
-public class DropDownHelper extends BasePage {
+public class DropDownHelper extends LoggerUtility {
 
 	Logger log = getLogger(DropDownHelper.class);
-
-	public DropDownHelper(WebDriver driver) {
-		super(driver);
-	}
 
 	public void selectByValue(WebElement element, String value) {
 		try {

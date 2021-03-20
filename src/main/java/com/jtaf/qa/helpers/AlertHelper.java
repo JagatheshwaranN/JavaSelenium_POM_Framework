@@ -4,20 +4,20 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
-
-import com.jtaf.qa.pages.BasePage;
+import com.jtaf.qa.utilities.LoggerUtility;
 
 /**
  * 
  * @author Jaga
  *
  */
-public class AlertHelper extends BasePage {
+public class AlertHelper extends LoggerUtility {
 
 	Logger log = getLogger(AlertHelper.class);
+	private WebDriver driver;
 
 	public AlertHelper(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 	}
 
 	public Alert getAlert() {
@@ -109,5 +109,5 @@ public class AlertHelper extends BasePage {
 			ex.printStackTrace();
 		}
 	}
-	
+
 }

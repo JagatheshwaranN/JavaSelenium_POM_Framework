@@ -45,6 +45,7 @@ public class BaseTest extends FileReaderUtility {
 				driver.manage().window().maximize();
 			} else if (browser.equalsIgnoreCase("browser.firefox")) {
 				System.setProperty("webdriver.chrome.driver", getTestData("firefox.driver"));
+				log.info("======================== [ Launching " + browser + " Browser] ========================");
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 			} else {

@@ -6,19 +6,20 @@ import java.util.Set;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import com.jtaf.qa.pages.BasePage;
+import com.jtaf.qa.utilities.LoggerUtility;
 
 /**
  * 
  * @author Jaga
  *
  */
-public class BrowserHelper extends BasePage {
+public class BrowserHelper extends LoggerUtility {
 
 	Logger log = getLogger(BrowserHelper.class);
+	private WebDriver driver;
 
 	public BrowserHelper(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 	}
 
 	public void goBack() {

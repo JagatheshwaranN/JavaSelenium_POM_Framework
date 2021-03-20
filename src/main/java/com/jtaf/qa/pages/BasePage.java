@@ -8,6 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.jtaf.qa.helpers.AlertHelper;
+import com.jtaf.qa.helpers.BrowserHelper;
+import com.jtaf.qa.helpers.DropDownHelper;
+import com.jtaf.qa.helpers.JavaScriptHelper;
+import com.jtaf.qa.helpers.MouseActionHelper;
+import com.jtaf.qa.helpers.VerificationHelper;
+
 /**
  * @author Jaga
  *
@@ -15,6 +22,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class BasePage extends Page {
 
 	Logger log = getLogger(BasePage.class);
+
+	AlertHelper alertHelper = new AlertHelper(driver);
+	BrowserHelper browserHelper = new BrowserHelper(driver);
+	DropDownHelper dropDownHelper = new DropDownHelper();
+	JavaScriptHelper javaScriptHelper = new JavaScriptHelper(driver);
+	MouseActionHelper mouseActionHelper = new MouseActionHelper(driver);
+	VerificationHelper verificationHelper = new VerificationHelper();
 
 	public BasePage(WebDriver driver) {
 		super(driver);

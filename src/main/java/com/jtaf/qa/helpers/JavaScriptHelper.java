@@ -4,17 +4,15 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import com.jtaf.qa.utilities.LoggerUtility;
 
-import com.jtaf.qa.pages.BasePage;
-
-public class JavaScriptHelper extends BasePage {
+public class JavaScriptHelper extends LoggerUtility {
 
 	Logger log = getLogger(JavaScriptHelper.class);
-
-	JavascriptExecutor executor = (JavascriptExecutor) driver;
+	private WebDriver driver;
 
 	public JavaScriptHelper(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
 	}
 
 	public Object executeScript(String script) {
@@ -23,6 +21,7 @@ public class JavaScriptHelper extends BasePage {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		return executor.executeAsyncScript(script);
 
 	}
@@ -33,11 +32,13 @@ public class JavaScriptHelper extends BasePage {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		return executor.executeAsyncScript(script, arguments);
 	}
 
 	public void elementClick(WebElement element) {
 		try {
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].click();", element);
 			log.info("Element Click Using JS Executor Is Successful");
 		} catch (Exception ex) {

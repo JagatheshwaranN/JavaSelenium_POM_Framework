@@ -8,3 +8,55 @@
 06-03-2021 21:03:480 INFO  BaseTest :43 - ======================== [ Launching chrome browser] ========================
 06-03-2021 21:03:181 INFO  LoginPage :46 - Login To Application Test Execution Start
 06-03-2021 21:03:847 INFO  LoginPage :51 - Login To Application Test Execution End
+20-03-2021 12:03:347 INFO  BaseTest :34 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 12:03:437 INFO  BaseTest :43 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 12:03:444 INFO  LoginPage :46 - Login To Application Test Execution Start
+20-03-2021 12:03:473 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 12:03:906 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:723 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:597 INFO  BasePage :80 - Some error occured while wait for element : By.xpath: //input[@value='Log in']
+20-03-2021 12:03:706 INFO  BasePage :56 - Some error occured while creating element : By.xpath: //input[@value='Log in']
+20-03-2021 12:03:20 INFO  BrowserHelper :28 - Browser Navigate To Previous Page
+20-03-2021 12:03:20 INFO  LoginPage :63 - Login Page doLogin Execution End
+20-03-2021 12:03:515 INFO  BasePage :80 - Some error occured while wait for element : By.className: content-header
+20-03-2021 12:03:553 INFO  BasePage :56 - Some error occured while creating element : By.className: content-header
+20-03-2021 12:03:885 INFO  BaseTest :34 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 12:03:909 INFO  BaseTest :43 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 12:03:258 INFO  LoginPage :46 - Login To Application Test Execution Start
+20-03-2021 12:03:324 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 12:03:778 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:461 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:920 INFO  BrowserHelper :28 - Browser Navigate To Previous Page
+20-03-2021 12:03:921 INFO  LoginPage :63 - Login Page doLogin Execution End
+20-03-2021 12:03:33 INFO  BasePage :80 - Some error occured while wait for element : By.className: content-header
+20-03-2021 12:03:101 INFO  BasePage :56 - Some error occured while creating element : By.className: content-header
+20-03-2021 12:03:605 INFO  BaseTest :34 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 12:03:638 INFO  BaseTest :43 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 12:03:142 INFO  LoginPage :46 - Login To Application Test Execution Start
+20-03-2021 12:03:197 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 12:03:539 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:455 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:159 INFO  JavaScriptHelper :43 - Element Click Using JS Executor Is Successful
+20-03-2021 12:03:556 INFO  BrowserHelper :28 - Browser Navigate To Previous Page
+20-03-2021 12:03:557 INFO  LoginPage :63 - Login Page doLogin Execution End
+20-03-2021 12:03:94 INFO  BasePage :80 - Some error occured while wait for element : By.className: content-header
+20-03-2021 12:03:214 INFO  BasePage :56 - Some error occured while creating element : By.className: content-header
+20-03-2021 12:03:511 INFO  BaseTest :34 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 12:03:686 INFO  BaseTest :43 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 12:03:230 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 12:03:248 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 12:03:635 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:363 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:532 INFO  JavaScriptHelper :43 - Element Click Using JS Executor Is Successful
+20-03-2021 12:03:534 INFO  LoginPage :63 - Login Page doLogin Execution End
+20-03-2021 12:03:803 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 12:03:879 INFO  BaseTest :34 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 12:03:912 INFO  BaseTest :43 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 12:03:233 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 12:03:242 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 12:03:402 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:824 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 12:03:776 INFO  JavaScriptHelper :43 - Element Click Using JS Executor Is Successful
+20-03-2021 12:03:869 INFO  BrowserHelper :28 - Browser Navigate To Previous Page
+20-03-2021 12:03:872 INFO  LoginPage :63 - Login Page doLogin Execution End
+20-03-2021 12:03:875 INFO  LoginPage :50 - Login To Application Test Execution End

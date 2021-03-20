@@ -1,18 +1,12 @@
 package com.jtaf.qa.helpers;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import com.jtaf.qa.utilities.LoggerUtility;
 
-import com.jtaf.qa.pages.BasePage;
-
-public class VerificationHelper extends BasePage {
+public class VerificationHelper extends LoggerUtility {
 
 	Logger log = getLogger(VerificationHelper.class);
-
-	public VerificationHelper(WebDriver driver) {
-		super(driver);
-	}
 
 	public boolean verifyElementPresent(WebElement element) {
 		boolean isDisplayed = false;

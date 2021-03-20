@@ -7,10 +7,10 @@ import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage {
 
-	private By header = By.className("content-header");
-	private By leftNavCustomersOption = By.xpath("//a[@href='#']//span[text()='Customers']");
-	private By leftNavInlineCustomersOption = By.xpath("//a[@href='/Admin/Customer/List']//span[text()='Customers']");
-	private By customerSearchSection = By.xpath("//div[@class='panel panel-default panel-search']");
+	private By header = By.xpath("//div[@class='content-header']");
+	private By leftNavCustomersOption = By.xpath("//a[@href='#']//p[contains(text(),'Customers')]");
+	private By leftNavInlineCustomersOption = By.xpath("//a[@href='/Admin/Customer/List']//p[contains(text(),'Customers')]");
+	private By customerSearchSection = By.xpath("//div[@class='card card-default card-search']");
 	
 	Logger log = getLogger(HomePage.class);
 
