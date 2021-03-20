@@ -142,10 +142,17 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;testNGSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.jtaf.qa.listeners.ExtentListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;LoginTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.jtaf.qa.test.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.jtaf.qa.test.LoginPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyLoginTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.jtaf.qa.test.LoginPageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginTest --&gt;
 &lt;/suite&gt; &lt;!-- testNGSuite --&gt;
@@ -189,12 +196,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginTest')
 data.setCell(0, 2, 'com.jtaf.qa.test.LoginPageTest')
-data.setCell(0, 3, 18664);
+data.setCell(0, 3, 12613);
 window.suiteTableData['testNGSuite']= { tableData: data, tableDiv: 'times-div-testNGSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-testNGSuite">
               </div> <!-- times-div-testNGSuite -->
             </div> <!-- times-div -->
@@ -205,13 +212,30 @@ return data;
             <span class="header-content">Reporter output for testNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">verifyLoginTest TEST STARTED</span>
+                <span class="reporter-method-output">verifyLoginTest TEST PASSED</span>
+                <span class="reporter-method-output"><a href='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_20_03_2021_07_45_50.png'> <img src='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_20_03_2021_07_45_50.png' height='100' width='100'/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-testNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.jtaf.qa.test.LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLoginPageTitleTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyLoginPageHeaderTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-testNGSuite" class="panel">
@@ -227,19 +251,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpTest(chrome)</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-start">222 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginTest</span>
-                <span class="method-start">7347 ms</span>
+                <span class="method-start">16161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26012 ms</span>
+                <span class="method-start">30721 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">exit</span>
-                <span class="method-start">26196 ms</span>
+                <span class="method-start">33823 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

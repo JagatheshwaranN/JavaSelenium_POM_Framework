@@ -15,29 +15,29 @@ public class LoginPageTest extends BaseTest {
 
 	Logger log = getLogger(LoginPage.class);
 
-	// @Test(priority = 1)
-	// public void verifyLoginPageTitleTest() {
-	// try {
-	// log.info("Login Page Title Test Execution Start");
-	// String title = page.getInstance(LoginPage.class).getLoginPageTitle();
-	// Assert.assertEquals(title, getTestData("login.page.title"));
-	// log.info("Login Page Title Test Execution End");
-	// } catch (Exception ex) {
-	// ex.printStackTrace();
-	// }
-	// }
-	//
-	// @Test(priority = 2)
-	// public void verifyLoginPageHeaderTest() {
-	// try {
-	// log.info("Login Page Header Test Execution Start");
-	// String header = page.getInstance(LoginPage.class).getLoginPageHeader();
-	// Assert.assertEquals(header, getTestData("login.page.header"));
-	// log.info("Login Page Header Test Execution End");
-	// } catch (Exception ex) {
-	// ex.printStackTrace();
-	// }
-	// }
+	@Test(priority = 1)
+	public void verifyLoginPageTitleTest() {
+		try {
+			log.info("Login Page Title Test Execution Start");
+			String title = page.getInstance(LoginPage.class).getLoginPageTitle();
+			Assert.assertEquals(title, getTestData("login.page.title"));
+			log.info("Login Page Title Test Execution End");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+
+	@Test(priority = 2)
+	public void verifyLoginPageHeaderTest() {
+		try {
+			log.info("Login Page Header Test Execution Start");
+			String header = page.getInstance(LoginPage.class).getLoginPageHeader();
+			Assert.assertEquals(header, getTestData("login.page.header"));
+			log.info("Login Page Header Test Execution End");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
 
 	@Test(priority = 3)
 	public void verifyLoginTest() {

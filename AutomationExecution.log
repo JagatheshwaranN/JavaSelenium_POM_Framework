@@ -60,3 +60,73 @@
 20-03-2021 12:03:869 INFO  BrowserHelper :28 - Browser Navigate To Previous Page
 20-03-2021 12:03:872 INFO  LoginPage :63 - Login Page doLogin Execution End
 20-03-2021 12:03:875 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 16:03:122 INFO  BaseTest :43 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 16:03:82 INFO  BaseTest :57 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 16:03:543 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 16:03:589 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 16:03:208 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 16:03:241 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 16:03:730 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 16:03:883 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 18:03:925 INFO  BaseTest :43 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 18:03:660 INFO  BaseTest :57 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 18:03:287 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 18:03:319 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 18:03:949 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:832 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:533 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 18:03:752 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 18:03:907 INFO  BaseTest :43 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 18:03:143 INFO  BaseTest :57 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 18:03:166 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 18:03:228 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 18:03:985 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:523 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:311 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 18:03:748 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 18:03:860 INFO  BaseTest :43 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 18:03:126 INFO  BaseTest :57 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 18:03:280 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 18:03:310 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 18:03:112 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:15 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:164 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 18:03:320 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 18:03:192 INFO  BaseTest :43 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 18:03:16 INFO  BaseTest :57 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 18:03:803 INFO  LoginPage :21 - Login Page Title Test Execution Start
+20-03-2021 18:03:865 INFO  LoginPage :24 - Login Page Title Test Execution End
+20-03-2021 18:03:907 INFO  BaseTest :57 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 18:03:784 INFO  LoginPage :33 - Login Page Header Test Execution Start
+20-03-2021 18:03:260 INFO  LoginPage :36 - Login Page Header Test Execution End
+20-03-2021 18:03:513 INFO  BaseTest :57 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 18:03:350 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 18:03:350 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 18:03:01 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:342 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 18:03:202 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 18:03:489 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 19:03:732 INFO  BaseTest :38 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 19:03:144 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 19:03:878 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 19:03:892 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 19:03:405 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 19:03:328 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 19:03:607 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 19:03:830 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 19:03:720 INFO  BaseTest :38 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 19:03:921 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 19:03:670 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 19:03:691 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 19:03:109 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 19:03:902 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 19:03:792 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 19:03:952 INFO  LoginPage :50 - Login To Application Test Execution End
+20-03-2021 19:03:90 INFO  BaseTest :38 - ======================== [ Property File Load Successful ] ========================
+20-03-2021 19:03:300 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ========================
+20-03-2021 19:03:333 INFO  LoginPage :45 - Login To Application Test Execution Start
+20-03-2021 19:03:395 INFO  LoginPage :52 - Login Page doLogin Execution Start
+20-03-2021 19:03:770 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 19:03:664 INFO  VerificationHelper :15 - Element Is Present On The Page
+20-03-2021 19:03:522 INFO  LoginPage :61 - Login Page doLogin Execution End
+20-03-2021 19:03:852 INFO  LoginPage :50 - Login To Application Test Execution End
