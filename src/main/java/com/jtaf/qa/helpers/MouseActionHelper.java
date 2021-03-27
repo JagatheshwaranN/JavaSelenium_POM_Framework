@@ -6,6 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import com.jtaf.qa.utilities.LoggerUtility;
 
+/**
+ * 
+ * @author Jaga
+ *
+ */
 public class MouseActionHelper extends LoggerUtility {
 
 	Logger log = getLogger(MouseActionHelper.class);
@@ -20,7 +25,7 @@ public class MouseActionHelper extends LoggerUtility {
 			Actions builder = new Actions(driver);
 			builder.moveToElement(element1).build().perform();
 			element2.click();
-			log.info("Mouse Hover And Click On Element Is Successful");
+			log.info("Mouse hover and click on element is successful");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

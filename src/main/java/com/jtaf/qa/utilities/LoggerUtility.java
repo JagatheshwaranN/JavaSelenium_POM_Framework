@@ -3,6 +3,11 @@ package com.jtaf.qa.utilities;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+/**
+ * 
+ * @author Jaga
+ *
+ */
 public class LoggerUtility {
 
 	private static boolean root = false;

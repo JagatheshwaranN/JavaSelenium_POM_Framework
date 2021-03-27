@@ -7,12 +7,19 @@
 	<test name="LoginTest">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.jtaf.qa.test.LoginPageTest">
-				<methods>
-					<include name="verifyLoginTest" />
-				</methods>
-			</class>
-			<!-- <class name="com.jtaf.qa.test.CustomerSearchTest"></class> -->
+			<class name="com.jtaf.qa.test.LoginPageTest" />
 		</classes>
 	</test>
+	<!-- <test name="HomePageTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.jtaf.qa.test.HomePageTest" />
+		</classes>
+	</test>
+	<test name="CustomerSearchPageTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.jtaf.qa.test.CustomerSearchPageTest" />
+		</classes>
+	</test> -->
 </suite>

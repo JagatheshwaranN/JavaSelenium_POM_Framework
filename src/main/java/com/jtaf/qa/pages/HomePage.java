@@ -5,6 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+/**
+ * 
+ * @author Jaga
+ *
+ */
 public class HomePage extends BasePage {
 
 	private By header = By.xpath("//div[@class='content-header']");
@@ -44,11 +49,11 @@ public class HomePage extends BasePage {
 
 	public CustomerSearchPage navigateToCustomerSearchPage() {
 		try {
-			log.info("Home Page navigateToCustomerSearchPage Execution Start");
+			log.info("Navigate to customer search page execution start");
 			getLeftNavCustomersOption().click();
 			getLeftNavInlineCustomersOption().click();
 			getCustomerSearchSection().isDisplayed();
-			log.info("Home Page navigateToCustomerSearchPage Execution End");
+			log.info("Navigate to customer search page execution end");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

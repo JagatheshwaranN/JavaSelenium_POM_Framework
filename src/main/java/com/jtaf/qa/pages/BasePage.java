@@ -53,7 +53,7 @@ public class BasePage extends Page {
 			waitForElementPresent(locator);
 			element = driver.findElement(locator);
 		} catch (Exception ex) {
-			log.info("Some error occured while creating element : " + locator.toString());
+			log.info("Some error occured while creation of element : " + locator.toString());
 			ex.printStackTrace();
 		}
 		return element;
@@ -66,7 +66,7 @@ public class BasePage extends Page {
 			waitForElementPresent(locator);
 			elements = driver.findElements(locator);
 		} catch (Exception ex) {
-			log.info("Some error occured while creating element : " + locator.toString());
+			log.info("Some error occured while creation of element : " + locator.toString());
 			ex.printStackTrace();
 		}
 		return elements;

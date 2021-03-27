@@ -9,6 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.jtaf.qa.utilities.LoggerUtility;
 
+/**
+ * 
+ * @author Jaga
+ *
+ */
 public class DropDownHelper extends LoggerUtility {
 
 	Logger log = getLogger(DropDownHelper.class);
@@ -17,7 +22,7 @@ public class DropDownHelper extends LoggerUtility {
 		try {
 			Select select = new Select(element);
 			select.selectByValue(value);
-			log.info("The Value " + value + " Is Selected");
+			log.info("The value " + value + " is selected");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -27,7 +32,7 @@ public class DropDownHelper extends LoggerUtility {
 		try {
 			Select select = new Select(element);
 			select.selectByIndex(index);
-			log.info("The Value At Index " + index + " Is Selected");
+			log.info("The value at index " + index + " is selected");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -37,7 +42,7 @@ public class DropDownHelper extends LoggerUtility {
 		try {
 			Select select = new Select(element);
 			select.selectByVisibleText(visibleText);
-			log.info("The Visible Text " + visibleText + " Is Selected");
+			log.info("The visible text " + visibleText + " is selected");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -47,7 +52,7 @@ public class DropDownHelper extends LoggerUtility {
 		String value = null;
 		try {
 			value = new Select(element).getFirstSelectedOption().getText();
-			log.info("The Selected Value Text Is : " + value);
+			log.info("The selected value text is : " + value);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -61,7 +66,7 @@ public class DropDownHelper extends LoggerUtility {
 			List<WebElement> listelements = select.getOptions();
 			dropdownvalues = new LinkedList<String>();
 			for (WebElement elements : listelements) {
-				log.info("The Element Values Of The DropDown Are : " + elements.getText());
+				log.info("The element values of the dropdown are : " + elements.getText());
 				dropdownvalues.add(elements.getText());
 			}
 		} catch (Exception ex) {

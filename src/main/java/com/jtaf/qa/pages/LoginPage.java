@@ -49,7 +49,7 @@ public class LoginPage extends BasePage {
 
 	public HomePage doLogin(String username, String password) {
 		try {
-			log.info("Login Page doLogin Execution Start");
+			log.info("Do login execution start");
 			Assert.assertEquals(true, verificationHelper.verifyElementPresent(getEmailId()));
 			getEmailId().clear();
 			getEmailId().sendKeys(username);
@@ -58,7 +58,7 @@ public class LoginPage extends BasePage {
 			getPassword().sendKeys(password);
 			// javaScriptHelper.elementClick(getLoginButton());
 			getLoginButton().click();
-			log.info("Login Page doLogin Execution End");
+			log.info("Do login execution end");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

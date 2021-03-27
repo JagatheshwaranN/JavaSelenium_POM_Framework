@@ -16,8 +16,13 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.jtaf.qa.test.BaseTest;
-import com.jtaf.qa.utilities.Extentutility;
+import com.jtaf.qa.utilities.ExtentUtility;
 
+/**
+ * 
+ * @author Jaga
+ *
+ */
 public class ExtentListener extends BaseTest implements ITestListener {
 
 	public static ExtentReports extent;
@@ -25,15 +30,23 @@ public class ExtentListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext testContext) {
-		extent.flush();
-		Reporter.log(testContext.getName() + " TEST FINISHED");
+		try {
+			extent.flush();
+			Reporter.log(testContext.getName() + " test finished");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 	}
 
 	@Override
 	public void onStart(ITestContext testContext) {
-		extent = Extentutility.getInstance();
-		test = extent.createTest(testContext.getName());
-		Reporter.log(testContext.getName() + " TEST STARTED");
+		try {
+			extent = ExtentUtility.getInstance();
+			test = extent.createTest(testContext.getName());
+			Reporter.log(testContext.getName() + " test started");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 	}
 
 	@Override
@@ -45,7 +58,7 @@ public class ExtentListener extends BaseTest implements ITestListener {
 	public void onTestFailure(ITestResult testResult) {
 		try {
 			test.log(Status.FAIL, testResult.getThrowable());
-			Reporter.log(testResult.getMethod().getMethodName() + " TEST FAILED " + testResult.getThrowable());
+			Reporter.log(testResult.getMethod().getMethodName() + " test failed " + testResult.getThrowable());
 			if (!testResult.isSuccess()) {
 				Calendar calendar = Calendar.getInstance();
 				SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
@@ -67,22 +80,30 @@ public class ExtentListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult testResult) {
-		test.log(Status.SKIP, testResult.getThrowable());
-		Reporter.log(testResult.getMethod().getMethodName() + " TEST SKIPPED " + testResult.getThrowable());
+		try {
+			test.log(Status.SKIP, testResult.getThrowable());
+			Reporter.log(testResult.getMethod().getMethodName() + " test skipped " + testResult.getThrowable());
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 	}
 
 	@Override
 	public void onTestStart(ITestResult testResult) {
-		test.log(Status.INFO, testResult.getName() + " STARTED");
-		Reporter.log(testResult.getMethod().getMethodName() + " TEST STARTED");
+		try {
+			test.log(Status.INFO, testResult.getName() + " started");
+			Reporter.log(testResult.getMethod().getMethodName() + " test started");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult testResult) {
 		try {
-			test.log(Status.PASS, testResult.getName() + " PASSED");
+			test.log(Status.PASS, testResult.getName() + " passed");
 
-			Reporter.log(testResult.getMethod().getMethodName() + " TEST PASSED");
+			Reporter.log(testResult.getMethod().getMethodName() + " test passed");
 			if (testResult.isSuccess()) {
 				Calendar calendar = Calendar.getInstance();
 				SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");

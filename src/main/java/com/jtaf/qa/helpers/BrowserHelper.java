@@ -25,7 +25,7 @@ public class BrowserHelper extends LoggerUtility {
 	public void goBack() {
 		try {
 			driver.navigate().back();
-			log.info("Browser Navigate To Previous Page");
+			log.info("Browser navigate to previous page");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -34,7 +34,7 @@ public class BrowserHelper extends LoggerUtility {
 	public void goForward() {
 		try {
 			driver.navigate().forward();
-			log.info("Browser Navigate To Front Page");
+			log.info("Browser navigate to front page");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -43,7 +43,7 @@ public class BrowserHelper extends LoggerUtility {
 	public void refresh() {
 		try {
 			driver.navigate().refresh();
-			log.info("Browser Refresh The Current Page");
+			log.info("Browser refresh the current page");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -51,7 +51,7 @@ public class BrowserHelper extends LoggerUtility {
 
 	public Set<String> getWindowHandles() {
 		try {
-			log.info("Capturing Windows Unique Alphanumeric Ids");
+			log.info("Capturing windows unique alphanumeric ids");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -62,9 +62,9 @@ public class BrowserHelper extends LoggerUtility {
 		try {
 			LinkedList<String> windowsId = new LinkedList<String>(getWindowHandles());
 			if (index < 0 || index > windowsId.size())
-				throw new IllegalArgumentException("Window Handle Has Invalid Index : " + index);
+				throw new IllegalArgumentException("Window handle has invalid index : " + index);
 			driver.switchTo().window(windowsId.get(index));
-			log.info("Switch To Window With Index : " + index);
+			log.info("Switch to window with index : " + index);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -74,7 +74,7 @@ public class BrowserHelper extends LoggerUtility {
 		try {
 			LinkedList<String> windowsid = new LinkedList<String>(getWindowHandles());
 			driver.switchTo().window(windowsid.get(0));
-			log.info("Switch To Parent Window");
+			log.info("Switch to parent window");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -85,7 +85,7 @@ public class BrowserHelper extends LoggerUtility {
 			switchToParentWindow();
 			LinkedList<String> windowsid = new LinkedList<String>(getWindowHandles());
 			for (int i = 1; i < windowsid.size(); i++) {
-				log.info("Child Window Id : " + windowsid.get(i));
+				log.info("Child window id : " + windowsid.get(i));
 				driver.switchTo().window(windowsid.get(i));
 				driver.close();
 			}
@@ -98,7 +98,7 @@ public class BrowserHelper extends LoggerUtility {
 	public void switchToFrame(String nameOrid) {
 		try {
 			driver.switchTo().frame(nameOrid);
-			log.info("Switch To Frame With Name or Id : " + nameOrid);
+			log.info("Switch to frame with name or id : " + nameOrid);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -108,7 +108,7 @@ public class BrowserHelper extends LoggerUtility {
 		String url = null;
 		try {
 			url = driver.getCurrentUrl();
-			log.info("Current Page Url : " + url);
+			log.info("Current page url : " + url);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

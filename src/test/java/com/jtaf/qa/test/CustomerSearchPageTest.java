@@ -8,14 +8,19 @@ import com.jtaf.qa.pages.CustomerSearchPage;
 import com.jtaf.qa.pages.HomePage;
 import com.jtaf.qa.pages.LoginPage;
 
+/**
+ * 
+ * @author Jaga
+ *
+ */
 public class CustomerSearchPageTest extends BaseTest {
 
 	Logger log = getLogger(CustomerSearchPageTest.class);
 
-	@Test(priority = 1)
-	public void verifyCustomerSearch() {
+	@Test(priority = 3)
+	public void verifyCustomerSearchTest() {
 		try {
-			log.info("Customer Search Page Test Execution Start");
+			log.info("Customer search page test execution start");
 			HomePage homePage = page.getInstance(LoginPage.class).doLogin(getTestData("app.username"),
 					getTestData("app.password"));
 			String homePageHeader = homePage.getHomePageHeader();
@@ -24,10 +29,10 @@ public class CustomerSearchPageTest extends BaseTest {
 			String customerSearchPageHeader = customerSearchPage.getCustomerSearchPageHeader();
 			Assert.assertEquals(customerSearchPageHeader, getTestData("customer.search.page.header"));
 			customerSearchPage.customerSearch(getTestData("customer.name"));
-			log.info("Customer Search Page Test Execution End");
+			log.info("Customer search page test execution end");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 	}
-
+	
 }

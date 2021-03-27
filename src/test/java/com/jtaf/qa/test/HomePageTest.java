@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.jtaf.qa.pages.HomePage;
+import com.jtaf.qa.pages.LoginPage;
 
 /**
  * 
@@ -12,28 +13,20 @@ import com.jtaf.qa.pages.HomePage;
  *
  */
 public class HomePageTest extends BaseTest {
-	
+
 	Logger log = getLogger(HomePageTest.class);
 
-	@Test(priority = 1)
-	public void verifyHomePageTitleTest() {
+	@Test(priority = 2)
+	public void verifyHomePageTest() {
 		try {
-			log.info("Home Page Title Test Execution Start");
+			log.info("Home page header test execution start");
+			HomePage homePage = page.getInstance(LoginPage.class).doLogin(getTestData("app.username"),
+					getTestData("app.password"));
+			String homePageHeader = homePage.getHomePageHeader();
 			String title = page.getInstance(HomePage.class).getHomePageTitle();
 			Assert.assertEquals(title, getTestData("home.page.title"));
-			log.info("Home Page Title Test Execution End");
-		} catch (Exception ex) {
-			ex.printStackTrace();
-		}
-	}
-
-	@Test(priority = 2)
-	public void verifyHomePageHeaderTest() {
-		try {
-			log.info("Home Page Header Test Execution Start");
-			String header = page.getInstance(HomePage.class).getHomePageHeader();
-			Assert.assertEquals(header, getTestData("home.page.header"));
-			log.info("Home Page Header Test Execution End");
+			Assert.assertEquals(homePageHeader, getTestData("home.page.header"));
+			log.info("Home page header test execution end");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

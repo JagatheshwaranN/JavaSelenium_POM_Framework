@@ -22,7 +22,7 @@ public class AlertHelper extends LoggerUtility {
 
 	public Alert getAlert() {
 		try {
-			log.info("Switch To Alert Popup Is Succesful");
+			log.info("Switch to alert popup is succesful");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -32,7 +32,7 @@ public class AlertHelper extends LoggerUtility {
 	public void acceptAlert() {
 		try {
 			getAlert().accept();
-			log.info("Alert Popup Accept Is Succesful");
+			log.info("Alert popup accept is succesful");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -41,7 +41,7 @@ public class AlertHelper extends LoggerUtility {
 	public void dismissAlert() {
 		try {
 			getAlert().dismiss();
-			log.info("Alert Popup Dismiss Is Succesful");
+			log.info("Alert popup dismiss is succesful");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -51,7 +51,7 @@ public class AlertHelper extends LoggerUtility {
 		String text = null;
 		try {
 			text = getAlert().getText();
-			log.info("Alert Popup Text Is : " + text);
+			log.info("Alert popup text is : " + text);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -62,10 +62,10 @@ public class AlertHelper extends LoggerUtility {
 	public boolean isAlertPresent() {
 		try {
 			driver.switchTo().alert();
-			log.info("Alert Popup Is Present : " + true);
+			log.info("Alert popup is present : " + true);
 			return true;
 		} catch (NoAlertPresentException ex) {
-			log.info("Alert Popup Is Not Present : " + false);
+			log.info("Alert popup is not present : " + false);
 			return false;
 		}
 
@@ -76,7 +76,7 @@ public class AlertHelper extends LoggerUtility {
 			if (!isAlertPresent()) {
 				return;
 			}
-			log.info("Alert Present - Alert Popup Accept Is Succesful");
+			log.info("Alert present - alert popup accept is succesful");
 			getAlertText();
 			acceptAlert();
 		} catch (Exception ex) {
@@ -89,7 +89,7 @@ public class AlertHelper extends LoggerUtility {
 			if (!isAlertPresent()) {
 				return;
 			}
-			log.info("Alert Present - Alert Popup Dismiss Is Succesful");
+			log.info("Alert present - alert popup dismiss is succesful");
 			dismissAlert();
 		} catch (Exception ex) {
 			ex.printStackTrace();
@@ -104,7 +104,7 @@ public class AlertHelper extends LoggerUtility {
 			Alert alert = getAlert();
 			alert.sendKeys(text);
 			alert.accept();
-			log.info("Alert Present - Alert Prompt Popup Accept Is Succesful");
+			log.info("Alert present - alert prompt popup accept is succesful");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

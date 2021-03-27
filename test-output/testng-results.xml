@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[LoginTest TEST STARTED]]>
+      <![CDATA[LoginTest test started]]>
     </line>
     <line>
-      <![CDATA[verifyLoginTest TEST STARTED]]>
+      <![CDATA[verifyLoginTest test started]]>
     </line>
     <line>
-      <![CDATA[verifyLoginTest TEST PASSED]]>
+      <![CDATA[verifyLoginTest test passed]]>
     </line>
     <line>
-      <![CDATA[<a href='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_20_03_2021_07_45_50.png'> <img src='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_20_03_2021_07_45_50.png' height='100' width='100'/></a>]]>
+      <![CDATA[<a href='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_27_03_2021_07_35_52.png'> <img src='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_27_03_2021_07_35_52.png' height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[verifyLoginTestUsingExcelData test started]]>
+    </line>
+    <line>
+      <![CDATA[verifyLoginTestUsingExcelData test passed]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTestUsingExcelData_27_03_2021_07_36_22.png'> <img src='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTestUsingExcelData_27_03_2021_07_36_22.png' height='100' width='100'/></a>]]>
     </line>
   </reporter-output>
-  <suite name="testNGSuite" duration-ms="31422" started-at="2021-03-20T14:15:22Z" finished-at="2021-03-20T14:15:53Z">
+  <suite name="testNGSuite" duration-ms="62652" started-at="2021-03-27T14:05:21Z" finished-at="2021-03-27T14:06:24Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="31422" started-at="2021-03-20T14:15:22Z" finished-at="2021-03-20T14:15:53Z">
+    <test name="LoginTest" duration-ms="62652" started-at="2021-03-27T14:05:21Z" finished-at="2021-03-27T14:06:24Z">
       <class name="com.jtaf.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.jtaf.qa.test.LoginPageTest@6f1fba17]" name="init" is-config="true" duration-ms="15" started-at="2021-03-20T14:15:22Z" finished-at="2021-03-20T14:15:22Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="init" is-config="true" duration-ms="29" started-at="2021-03-27T14:05:21Z" finished-at="2021-03-27T14:05:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.jtaf.qa.test.LoginPageTest@6f1fba17]" name="setUpTest" is-config="true" duration-ms="15924" started-at="2021-03-20T14:15:22Z" finished-at="2021-03-20T14:15:38Z">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="setUpTest" is-config="true" duration-ms="15907" started-at="2021-03-27T14:05:21Z" finished-at="2021-03-27T14:05:37Z">
           <params>
             <param index="0">
               <value>
@@ -34,24 +43,64 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="verifyLoginTest()[pri:3, instance:com.jtaf.qa.test.LoginPageTest@6f1fba17]" name="verifyLoginTest" duration-ms="12613" started-at="2021-03-20T14:15:38Z" finished-at="2021-03-20T14:15:50Z">
+        <test-method status="PASS" signature="verifyLoginTest()[pri:1, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="verifyLoginTest" duration-ms="15040" started-at="2021-03-27T14:05:37Z" finished-at="2021-03-27T14:05:52Z">
           <reporter-output>
             <line>
-              <![CDATA[verifyLoginTest TEST STARTED]]>
+              <![CDATA[verifyLoginTest test started]]>
             </line>
             <line>
-              <![CDATA[verifyLoginTest TEST PASSED]]>
+              <![CDATA[verifyLoginTest test passed]]>
             </line>
             <line>
-              <![CDATA[<a href='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_20_03_2021_07_45_50.png'> <img src='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_20_03_2021_07_45_50.png' height='100' width='100'/></a>]]>
+              <![CDATA[<a href='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_27_03_2021_07_35_52.png'> <img src='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTest_27_03_2021_07_35_52.png' height='100' width='100'/></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jtaf.qa.test.LoginPageTest@6f1fba17]" name="tearDown" is-config="true" duration-ms="713" started-at="2021-03-20T14:15:52Z" finished-at="2021-03-20T14:15:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="tearDown" is-config="true" duration-ms="862" started-at="2021-03-27T14:05:53Z" finished-at="2021-03-27T14:05:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:com.jtaf.qa.test.LoginPageTest@6f1fba17]" name="exit" is-config="true" duration-ms="543" started-at="2021-03-20T14:15:55Z" finished-at="2021-03-20T14:15:56Z">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="setUpTest" is-config="true" duration-ms="10843" started-at="2021-03-27T14:06:00Z" finished-at="2021-03-27T14:06:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="verifyLoginTestUsingExcelData(java.lang.String, java.lang.String)[pri:2, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="verifyLoginTestUsingExcelData" duration-ms="11541" started-at="2021-03-27T14:06:11Z" data-provider="LoginData" finished-at="2021-03-27T14:06:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[verifyLoginTestUsingExcelData test started]]>
+            </line>
+            <line>
+              <![CDATA[verifyLoginTestUsingExcelData test passed]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTestUsingExcelData_27_03_2021_07_36_22.png'> <img src='D:\ECLIPSE_ENV\Workspace\JavaSeleniumPOMFramework\src\test\resources\screenshots\success\verifyLoginTestUsingExcelData_27_03_2021_07_36_22.png' height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTestUsingExcelData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="tearDown" is-config="true" duration-ms="414" started-at="2021-03-27T14:06:23Z" finished-at="2021-03-27T14:06:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:com.jtaf.qa.test.LoginPageTest@33f88ab]" name="exit" is-config="true" duration-ms="613" started-at="2021-03-27T14:06:26Z" finished-at="2021-03-27T14:06:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->

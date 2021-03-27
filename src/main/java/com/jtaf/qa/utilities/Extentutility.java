@@ -9,7 +9,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
  * @author Jaga
  *
  */
-public class Extentutility {
+public class ExtentUtility {
 
 	private static ExtentReports extent;
 
