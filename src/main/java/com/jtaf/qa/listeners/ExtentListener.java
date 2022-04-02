@@ -15,7 +15,7 @@ import org.testng.Reporter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.jtaf.qa.test.BaseTest;
+import com.jtaf.qa.base.BaseTest;
 import com.jtaf.qa.utilities.ExtentUtility;
 
 /**

@@ -1,4 +1,4 @@
-package com.jtaf.qa.test;
+package com.jtaf.qa.base;
 
 import java.io.IOException;
 

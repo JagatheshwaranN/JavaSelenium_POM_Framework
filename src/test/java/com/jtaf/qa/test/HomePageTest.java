@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.jtaf.qa.base.BaseTest;
 import com.jtaf.qa.pages.HomePage;
 import com.jtaf.qa.pages.LoginPage;
 
@@ -22,9 +23,9 @@ public class HomePageTest extends BaseTest {
 			log.info("Home page header test execution start");
 			HomePage homePage = page.getInstance(LoginPage.class).doLogin(getTestData("app.username"),
 					getTestData("app.password"));
-			String homePageHeader = homePage.getHomePageHeader();
 			String title = page.getInstance(HomePage.class).getHomePageTitle();
 			Assert.assertEquals(title, getTestData("home.page.title"));
+			String homePageHeader = homePage.getHomePageHeader();
 			Assert.assertEquals(homePageHeader, getTestData("home.page.header"));
 			log.info("Home page header test execution end");
 		} catch (Exception ex) {

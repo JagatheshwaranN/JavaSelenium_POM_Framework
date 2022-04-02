@@ -6,6 +6,8 @@ import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.jtaf.qa.base.BaseTest;
 import com.jtaf.qa.pages.HomePage;
 import com.jtaf.qa.pages.LoginPage;
 import com.jtaf.qa.utilities.ExcelReaderUtility;

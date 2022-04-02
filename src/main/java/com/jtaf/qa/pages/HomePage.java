@@ -23,9 +23,9 @@ public class HomePage extends BasePage {
 		super(driver);
 	}
 
-	public WebElement getHeader() {
-		return getElement(header);
-	}
+//	public WebElement getHeader() {
+//		return getElement(header);
+//	}
 
 	public String getHomePageTitle() {
 		return getPageTitle();
