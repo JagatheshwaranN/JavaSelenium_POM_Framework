@@ -15,3 +15,11 @@
 27-03-2021 19:03:345 INFO  VerificationHelper :20 - Element is present on the page
 27-03-2021 19:03:740 INFO  LoginPage :61 - Do login execution end
 27-03-2021 19:03:909 INFO  LoginPage :57 - Login to application using excel data test execution end
+03-07-2022 17:07:287 INFO  BaseTest :38 - ======================== [ Property File Load Successful ] ========================
+03-07-2022 17:07:627 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ==============================
+03-07-2022 17:07:655 INFO  ExcelReaderUtility :24 - Data extraction from excel sheet start
+03-07-2022 17:07:708 INFO  ExcelReaderUtility :47 - Data extraction from excel sheet end
+03-07-2022 17:07:44 INFO  BaseTest :38 - ======================== [ Property File Load Successful ] ========================
+03-07-2022 17:07:349 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ==============================
+03-07-2022 17:07:754 INFO  ExcelReaderUtility :24 - Data extraction from excel sheet start
+03-07-2022 17:07:982 INFO  ExcelReaderUtility :47 - Data extraction from excel sheet end

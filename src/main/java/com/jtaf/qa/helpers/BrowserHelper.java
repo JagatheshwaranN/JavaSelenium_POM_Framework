@@ -82,7 +82,7 @@ public class BrowserHelper extends LoggerUtility {
 
 	public void switchToParentWithChildClose() {
 		try {
-			switchToParentWindow();
+			//switchToParentWindow();
 			LinkedList<String> windowsid = new LinkedList<String>(getWindowHandles());
 			for (int i = 1; i < windowsid.size(); i++) {
 				log.info("Child window id : " + windowsid.get(i));
