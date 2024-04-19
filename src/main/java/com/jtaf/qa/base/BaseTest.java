@@ -43,12 +43,10 @@ public class BaseTest extends FileReaderUtility {
 	public void setUpTest(String browser) {
 		if (System.getProperty("os.name").contains(getTestData("operating.system"))) {
 			if (browser.equalsIgnoreCase(getTestData("browser.chrome"))) {
-//				System.setProperty("webdriver.chrome.driver", getTestData("chrome.driver"));
 				log.info("======================== [ Launching " + browser + " Browser] ==============================");
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 			} else if (browser.equalsIgnoreCase("browser.firefox")) {
-//				System.setProperty("webdriver.chrome.driver", getTestData("firefox.driver"));
 				log.info("======================== [ Launching " + browser + " Browser] ==============================");
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
