@@ -1,5 +1,6 @@
 package com.jtaf.qa.pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -20,7 +21,7 @@ public abstract class Page extends LoggerUtility {
 
 	public Page(WebDriver driver) {
 		this.driver = driver;
-		this.wait = new WebDriverWait(this.driver, 30);
+		this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(30));
 	}
 
 	public abstract String getPageTitle();

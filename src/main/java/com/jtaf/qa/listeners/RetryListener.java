@@ -20,10 +20,10 @@ public class RetryListener implements IAnnotationTransformer {
 	@Override
 	public void transform(ITestAnnotation testAnnotation, Class clas, Constructor constructor, Method method) {
 		try {
-			IRetryAnalyzer retry = testAnnotation.getRetryAnalyzer();
-			if (retry == null) {
+			//IRetryAnalyzer retry = testAnnotation.getRetryAnalyzer();
+//			if (retry == null) {
 				testAnnotation.setRetryAnalyzer(RetryUtility.class);
-			}
+//			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

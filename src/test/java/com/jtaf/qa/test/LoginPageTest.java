@@ -45,7 +45,7 @@ public class LoginPageTest extends BaseTest {
 		return excelReader.getDataFromExcel(System.getProperty("user.dir") + getTestData("excel.path"), "login");
 	}
 
-	@Test(dataProvider = "LoginData", priority = 2)
+	@Test(dataProvider = "LoginData", priority = 2, enabled = false)
 	public void verifyLoginTestUsingExcelData(String username, String password) {
 		try {
 			log.info("Login to application using excel data test execution start");

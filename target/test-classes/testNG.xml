@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite thread-count="1" name="testNGSuite">
 	<listeners>
-		<listener class-name="com.jtaf.qa.listeners.ExtentListener"></listener>
+		<listener class-name="com.jtaf.qa.listeners.ExtentListener" />
 	</listeners>
 	<test name="LoginTest">
 		<parameter name="browser" value="chrome" />
@@ -10,7 +10,7 @@
 			<class name="com.jtaf.qa.test.LoginPageTest" />
 		</classes>
 	</test>
-	<!-- <test name="HomePageTest">
+	 <test name="HomePageTest">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.jtaf.qa.test.HomePageTest" />
@@ -21,5 +21,5 @@
 		<classes>
 			<class name="com.jtaf.qa.test.CustomerSearchPageTest" />
 		</classes>
-	</test> -->
+	</test>
 </suite>

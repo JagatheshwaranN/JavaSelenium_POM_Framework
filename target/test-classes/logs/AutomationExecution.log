@@ -23,3 +23,28 @@
 03-07-2022 17:07:349 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ==============================
 03-07-2022 17:07:754 INFO  ExcelReaderUtility :24 - Data extraction from excel sheet start
 03-07-2022 17:07:982 INFO  ExcelReaderUtility :47 - Data extraction from excel sheet end
+19-04-2024 10:04:104 INFO  BaseTest :38 - ======================== [ Property File Load Successful ] ========================
+19-04-2024 10:04:578 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ==============================
+19-04-2024 11:04:684 INFO  LoginPage :28 - Login to application test execution start
+19-04-2024 11:04:505 INFO  LoginPage :52 - Do login execution start
+19-04-2024 11:04:570 INFO  VerificationHelper :20 - Element is present on the page
+19-04-2024 11:04:82 INFO  VerificationHelper :20 - Element is present on the page
+19-04-2024 11:04:659 INFO  LoginPage :61 - Do login execution end
+19-04-2024 11:04:828 INFO  LoginPage :37 - Login to application test execution end
+19-04-2024 11:04:162 INFO  ExcelReaderUtility :24 - Data extraction from excel sheet start
+19-04-2024 11:04:768 INFO  ExcelReaderUtility :47 - Data extraction from excel sheet end
+19-04-2024 11:04:772 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ==============================
+19-04-2024 11:04:42 INFO  LoginPage :51 - Login to application using excel data test execution start
+19-04-2024 11:04:297 INFO  LoginPage :52 - Do login execution start
+19-04-2024 11:04:374 INFO  VerificationHelper :20 - Element is present on the page
+19-04-2024 11:04:855 INFO  VerificationHelper :20 - Element is present on the page
+19-04-2024 11:04:821 INFO  LoginPage :61 - Do login execution end
+19-04-2024 11:04:286 INFO  LoginPage :59 - Login to application using excel data test execution end
+19-04-2024 11:04:182 INFO  BaseTest :38 - ======================== [ Property File Load Successful ] ========================
+19-04-2024 11:04:507 INFO  BaseTest :47 - ======================== [ Launching chrome Browser] ==============================
+19-04-2024 11:04:362 INFO  LoginPage :28 - Login to application test execution start
+19-04-2024 11:04:645 INFO  LoginPage :52 - Do login execution start
+19-04-2024 11:04:709 INFO  VerificationHelper :20 - Element is present on the page
+19-04-2024 11:04:73 INFO  VerificationHelper :20 - Element is present on the page
+19-04-2024 11:04:154 INFO  LoginPage :61 - Do login execution end
+19-04-2024 11:04:305 INFO  LoginPage :37 - Login to application test execution end
