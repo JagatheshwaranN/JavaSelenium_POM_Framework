@@ -27,7 +27,7 @@ public class BaseTest extends FileReaderUtility {
 
 	public static WebDriver driver;
 	public static Page page;
-	public static ExtentReports extent;
+	// public static ExtentReports extent;
 	public static ExtentTest test;
 
 	Logger log = getLogger(BaseTest.class);
